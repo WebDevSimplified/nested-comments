@@ -63,13 +63,13 @@ export function PostProvider({ children }) {
             return {
               ...comment,
               likeCount: comment.likeCount + 1,
-              likedByMe: true,
+              likedByMe: addLike,
             }
           } else {
             return {
               ...comment,
               likeCount: comment.likeCount - 1,
-              likedByMe: false,
+              likedByMe: addLike,
             }
           }
         } else {
